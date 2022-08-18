@@ -1,5 +1,6 @@
 from pyrogram import *
 from pyrogram.types import *
+from pyrogram.owl import *
 from config import *
 import random
 
