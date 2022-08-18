@@ -1,6 +1,5 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import *
-from pyrogram.owl import *
 from config import *
 import random
 
