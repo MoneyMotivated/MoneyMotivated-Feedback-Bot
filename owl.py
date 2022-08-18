@@ -1,4 +1,4 @@
-from pyrogram import *
+from pyrogram import Client, filters, enums, __version__
 from pyrogram.types import *
 from pyrogram.owl import *
 from config import *
