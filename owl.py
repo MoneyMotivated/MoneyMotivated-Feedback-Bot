@@ -1,4 +1,4 @@
-from pyrogram import Client, filters, enums
+from pyrogram import *
 from pyrogram.types import *
 from config import *
 import random
