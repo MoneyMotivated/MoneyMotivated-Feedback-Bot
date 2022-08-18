@@ -1,1 +1,1 @@
-worker: python3 owl.py
+worker: bash start.sh
