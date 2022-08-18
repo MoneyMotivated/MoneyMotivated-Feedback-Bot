@@ -1,0 +1,45 @@
+{
+  "name": "DarkOwl Bot",
+  "description": "Telegram feedBack and admin chat Bot",
+  "keywords": ["telegram", "feedback", "bot"],
+  "repository": "https://github.com/MrMKN/Dark-Owl",
+  "env": {
+    "START_TEXT": {
+      "description": "Your Start message. Use this keys ( user mention = {user},  bot name = {bot} )",
+      "value": "Hai {user}  👋\n\nI am {bot} official assistant bot. please contact my owners with use me 🤩 please send any message",
+      "required": false            
+    },
+    "PHOTO": {
+      "description": "Add some telegraph link of pictures...multiple links to use one space and split",
+      "value": "https://telegra.ph/file/cbee88c58fd6708ddfe90.jpg https://telegra.ph/file/9fffc01c8477044d9c14e.jpg",
+      "required": false
+    },
+    "ADMIN": {
+      "description": "Your ID Or Who need is going to handle this bot",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token, as a string.",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "required": true
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
