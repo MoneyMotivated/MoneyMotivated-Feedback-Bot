@@ -100,7 +100,6 @@ async def reply_text(bot, message):
 
 @Owl.on_message(filters.user(ADMIN) & filters.media)
 async def replay_media(bot, message):
-    chat_id = message.from_user.id
     reference_id = True
     if message.reply_to_message is not None:
         file = message.reply_to_message
@@ -113,7 +112,7 @@ async def replay_media(bot, message):
         except Exception:
             pass
         await bot.copy_message(
-            chat_id=reference_id,
+            chat_id=int(reference_id),
             from_chat_id=message.chat.id,
             message_id=message.id,
             parse_mode=enums.ParseMode.HTML
