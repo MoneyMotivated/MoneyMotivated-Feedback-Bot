@@ -14,17 +14,13 @@ START_TEXT = os.environ.get("START_TEXT", "Hai {user}  👋\n\nI am {bot} offici
 
 ##=================[ ALL TEXT'S ]===============##
 
-TEXT = """Time = {t}
-
-ID: <code>{id}</code>
+TEXT = """ID: <code>{id}</code>
 Name: {name}
 UN: @{un}
 
 {msg}"""
 
-MEDIA = """Time = {t}
-
-ID: <code>{id}</code>
+MEDIA = """ID: <code>{id}</code>
 Name: {name}
 UN: @{un}"""
 
