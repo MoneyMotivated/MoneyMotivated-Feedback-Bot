@@ -1,5 +1,4 @@
 from pyrogram import Client, filters, enums, __version__
-from pyrogram.date_time import GMT
 from pyrogram.types import *
 from pyrogram.owl import *
 from config import *
@@ -59,7 +58,7 @@ async def pm_text(bot, message):
     info = await bot.get_users(user_ids=message.from_user.id)
     await bot.send_message(
         chat_id=ADMIN,
-        text=TEXT.format(id=info.id, name=info.mention, un=info.username, msg=message.text, t=GMT),
+        text=TEXT.format(id=info.id, name=info.mention, un=info.username, msg=message.text),
         parse_mode=enums.ParseMode.HTML
     ) 
 
@@ -75,7 +74,7 @@ async def pm_media(bot, message):
         chat_id=ADMIN,
         from_chat_id=message.chat.id,
         message_id=message.id,
-        caption=MEDIA.format(id=info.id, name=info.mention, un=info.username, t=GMT),
+        caption=MEDIA.format(id=info.id, name=info.mention, un=info.username),
         parse_mode=enums.ParseMode.HTML
     )
 
@@ -114,7 +113,7 @@ async def replay_media(bot, message):
         except Exception:
             pass
         await bot.copy_message(
-            chat_id=int(reference_id),
+            chat_id=reference_id,
             from_chat_id=message.chat.id,
             message_id=message.id,
             parse_mode=enums.ParseMode.HTML
