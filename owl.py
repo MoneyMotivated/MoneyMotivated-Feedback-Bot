@@ -59,7 +59,7 @@ async def pm_text(bot, message):
     info = await bot.get_users(user_ids=message.from_user.id)
     await bot.send_message(
         chat_id=ADMIN,
-        text=TEXT.format(id=info.id, name=info.mention, un=info.username, msg=message.text),
+        text=TEXT.format(id=info.id, name=info.mention, un=info.username, msg=message.text, t=GMT),
         parse_mode=enums.ParseMode.HTML
     ) 
 
@@ -75,7 +75,7 @@ async def pm_media(bot, message):
         chat_id=ADMIN,
         from_chat_id=message.chat.id,
         message_id=message.id,
-        caption=MEDIA.format(id=info.id, name=info.mention, un=info.username),
+        caption=MEDIA.format(id=info.id, name=info.mention, un=info.username, t=GMT),
         parse_mode=enums.ParseMode.HTML
     )
 
