@@ -1,8 +1,8 @@
 {
-  "name": "DarkOwl Bot",
-  "description": "Telegram feedBack and admin chat Bot",
+  "name": "Money Motivated Staff/Feedback Bot",
+  "description": "Telegram feedBack & admin chat Bot",
   "keywords": ["telegram", "feedback", "bot"],
-  "repository": "https://github.com/MrMKN/Dark-Owl",
+  "repository": "https://github.com/MoneyMotivated/MoneyMotivated-Feedback-Bot",
   "env": {
     "START_TEXT": {
       "description": "Your Start message. Use this keys ( user mention = {user},  bot name = {bot} )",
