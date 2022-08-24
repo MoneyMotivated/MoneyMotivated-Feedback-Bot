@@ -1,11 +1,10 @@
 <h1 align="center">
-Dark-Owl
-</h1>
+Money Motivated Feedback Bot</h1>
 
 Telegram Admin Chat bot with using pyrogram
 
 ### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/Dark-Owl)                     
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MoneyMotivated/MoneyMotivated-Feedback-Bot)                     
 
 ### Required Variables
 * `BOT_TOKEN`: Create a bot using @BotFather and get the Telegram API token.
@@ -19,16 +18,11 @@ Telegram Admin Chat bot with using pyrogram
 
 ## Original Source Code
 
-[ Dark-Owl!](https://github.com/MrMKN/Dark-Owl)
+[ MoneyMotivated Feedback Bot!](https://github.com/MoneyMotivated/MoneyMotivated-Feedback-Bot)
 
 ## Support ❤️‍🔥
-[![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/MKN_BOTZ_DISCUSSION_GROUP)
+[![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/MoneyMotivatedMarkets)
 
-[![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://t.me/mkn_bots_updates)
-
-## License   
-Licensed under [GNU AGPL 2.0.](https://github.com/MrMKN/Dark-Owl/blob/main/LICENSE)
-Selling The Codes To Other People For Money Is *Strictly Prohibited*.
-
+[![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://t.me/MoneyMotivatedMarkets)
 
 
